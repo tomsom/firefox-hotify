@@ -128,6 +128,11 @@ body {
   padding-top: 0px;
 }
 
+/* remove shadow of playlist/album cover */
+.XRD1P2qyA9MlnhSLnxwi {
+    box-shadow: none;
+}
+
 
 /* PROGRESSBAR MODS: */
 

@@ -11,7 +11,7 @@
 * [Modify browser as a Spotify app replacement](#modify-browser-as-a-spotify-app-replacement)
   * [1. Set Spotify as browser homepage](#1-set-spotify-as-browser-homepage)
   * [2. Remove tabs and toolbar](#2-remove-tabs-and-toolbar)
-  * [3. Add it as an desktop entry](#3-add-it-as-an-desktop-entry-to-show-up-in-an-app-launcher-etc)
+  * [3. Add it as a desktop entry](#3-add-it-as-an-desktop-entry-to-show-up-in-an-app-launcher-etc)
   
 ## How it works:
 - Add the stylebot extention
@@ -214,7 +214,7 @@ userChrome.css:
   ```
   To add tabs and toolbar again simply remove the CSS above from the userChrome.css file.
   
-  ### 3. Add it as an desktop entry (to show up in an app launcher etc.)
+  ### 3. Add it as a desktop entry (to show up in an app launcher etc.)
   - Linux:
     - ```nano ~/.local/share/applications/hotify.desktop```
     - Paste

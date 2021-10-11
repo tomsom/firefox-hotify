@@ -8,10 +8,10 @@
   * [1. Install Stylebot by Ankit Ahuja](#1-install-stylebot-by-ankit-ahuja)
   * [2. Add CSS to Stylebot](#2-add-css-to-stylebot)
   * [3. Basic configuration](#3-basic-configuration)
-* [Modify Browser as a Spotify App replacement](#modify-browser-as-a-spotify-app-replacement)
+* [Modify browser as a Spotify app replacement](#modify-browser-as-a-spotify-app-replacement)
   * [1. Set Spotify as browser homepage](#1-set-spotify-as-browser-homepage)
   * [2. Remove tabs and toolbar](#2-remove-tabs-and-toolbar)
-  * [3. Add it as an Desktop Entry](#3-add-it-as-an-desktop-entry-to-show-up-in-an-app-launcher-etc)
+  * [3. Add it as an desktop entry](#3-add-it-as-an-desktop-entry-to-show-up-in-an-app-launcher-etc)
   
 ## How it works:
 - Add the stylebot extention
@@ -31,6 +31,7 @@
 ![Screenshot_2021-10-10 Spotify - Web Player Music for everyone(2)](https://user-images.githubusercontent.com/50613331/136693840-cc72f876-fb67-48f6-bf29-492b0f256f28.png)
 
 ## 'Installation':
+
 ### 1. Install Stylebot by Ankit Ahuja
 Follow the link and install the extention for your browser:
 - [Firefox](https://addons.mozilla.org/en-US/firefox/addon/stylebot-web/)
@@ -38,8 +39,9 @@ Follow the link and install the extention for your browser:
 - [Stylebot website](https://stylebot.dev/)
 
 You might also want to install [uBlock Origin](https://ublockorigin.com/) ;)
+
 ### 2. Add CSS to Stylebot
-Once installed go to the [Spotify Webplayer Page](https:open.spotify.com) and click on the stylebot extenion logo in the toolbar(might be hidden in a overflow menu).
+Once installed go to the [Spotify Webplayer Page](https:open.spotify.com) and click on the stylebot extention icon in the toolbar(might be hidden in an overflow menu).
 
 &#8594; Open Stylebot
 
@@ -178,15 +180,18 @@ body {
   left: 60px !important;
 }
 ```
+
 ### 3. Basic configuration:
-- Feel free to change up the colors by modifying the variables at top
-- Hidden elements you might want to be shown can be readded by deleting or commenting the class names from the hide-list, below the color variables(the order of the class names equals the list in the css-comment)
+- Feel free to change the colors by modifying the variables at top(the default colors a based on the [tokio night vsc theme](https://github.com/enkia/tokyo-night-vscode-theme))
+- Hidden elements you might want to be shown can be readded by deleting or commenting the class names from the hide-list below the color variables(the order of the class names is the same as in the comment above it)
 - If you want to revert to the default progressbar delete or comment everything below ```/* PROGRESSBAR MODS: */```
 
-## Modify Browser as a Spotify App replacement
+## Modify browser as a Spotify app replacement
 Note: This configurtion will make your browser unsuitable for normal use. If you use Firefox as your main browser consider using another Firefox based browser (like Waterfox, Librewolf etc.) for this.
+
 ### 1. Set Spotify as browser homepage:
 &#8594; Firefox Settings &#8594; Home &#8594; Custom URLs... &#8594; Enter: ```"https://open.spotify.com"```
+
 ### 2. Remove tabs and toolbar:
 - Depending on your OS go to:
   - Linux: ```~/.mozilla/firefox/```
@@ -195,7 +200,6 @@ Note: This configurtion will make your browser unsuitable for normal use. If you
 - Enter the folder ending with '.default-release'
 - Create a folder named 'chrome' if not existant already
 - In there create a file named userChrome.css and add the following to it:
-  
 userChrome.css:
   ```
   /* REMOVE TOOLBAR */
@@ -208,7 +212,9 @@ userChrome.css:
     display: none !important;
   }
   ```
-  ### 3. Add it as an Desktop Entry (to show up in an app launcher etc.)
+  To add tabs and toolbar again simply remove the CSS above from the userChrome.css file.
+  
+  ### 3. Add it as an desktop entry (to show up in an app launcher etc.)
   - Linux:
     - ```nano ~/.local/share/applications/hotify.desktop```
     - Paste

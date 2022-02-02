@@ -51,134 +51,113 @@ Once installed go to the [Spotify Webplayer Page](https:open.spotify.com) and cl
 
 ```
 /* COLORS: */
-body {
+    body {
+    /* main background and shades */
+        --bg: #1a1b26;
+        --bga: #1a1b2677;
+        --bga2: #1a1b2644;
 
-/* MAIN BACKGROUND: */
---bg: #1a1b26;
+    /* accent colors */
+        --accent: #24283b;
 
-/* ACCENT */
---accent: #24283b;
+    /* text accent*/
+        --accent-text: #565f89;
+    }
+    .TywOcKZEqNynWecCiATc {
+    /* progessbar(playback/volume) colors: */
+        /* background */
+        --bg-color: var(--accent);
+        /* foregrounf */
+        --fg-color: var(--accent-text);
+        /* on hover */
+        --is-active-fg-color: white;
+    }
 
-/* TEXT ACCENT */
---accent-text: #565f89;
-
-/* PROGRESSBAR BACKGROUND */
---pgb-bg: #565f89;
-}
 
 /* HIDE: */
-/* -Spotify logo
- * -Install app button
- * -Upgrade button
- * -Account button
- * -Artist and playlist banner */
-.D_XKXBZDhgpM1KrmKy3O,
-.i0XB7255K_4QFLJsSGc_,
-.GGdmQ1RUtuGP7ClED7uf,
-.PnXH8Hvc4os3tFpc10_z,
-._dsx4Y9jukDHLzhl7bQb.wQi0raQMEJJrELuj_2FP {
-   display: none; 
-  }
+    /* Spotify logo */
+    /*.NyIynkmMpZXSoaE3XGhA,*/
 
-/* set background color */
-.Root__top-container,
-.LcjM521yr5D14A54HbQl,
-.We1fExPHxLIRmV0rZGNo,
-.e2JzVB2WkGm7GMT8rkEg,
-.EGbXItTF_kUHbao1jeCp,
-.iYoKwYJwszPZXYQCZQ4s,
-.fynR25MOeILQ7mCZ8247,
-.euOnte9wvOF0D_SGxEZ9,
-.JBEYL0L5KiIeKcmT3gNp,
-.gqeP9Y0_y6DLm4CD_m3Q,
-.Root__nav-bar,
-.contentSpacing {
-  background-image: none;
-  background-color: var(--bg);
-}
+    /* Upgrade button */
+    .Qt5xfSWikz6CLU8Vobxs,
 
-/* set accent colors */
-.os-scrollbar-handle,
-.KL469QQzoRZLOmKomNzk,
-._clplXKRPuAbAoCUarH0,
-.OALAQFKvC7XQOVYpklB4,
-.pLwpjUDpZgzSXNOsGn_c,
-.dIwMadpRrW1PwEwEeAbN,
-.CPgTPk9wPOVigmNI6xWP,
-.h4DQmL9PpLcsYvf0yGno {
-  background: var(--accent) ;
-  color:var(--accent-text);
-}
+    /* Install app button */
+    .WvLkmOVB2R2vzI2ibR_r,
 
-/* move sidebar to make place for 
- * back and foreward button */
-.Root__nav-bar {
-  padding-top: 40px;
-  z-index: 0;
-}
-
-/* move back and foreward button
- * above sidebar */
-.vxv8l5aw6EzrYxBGyQ33 {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-}
-
-/* remove top padding main view */
-.HiyUdbeEyoMBpq5N84ND {
-  padding-top: 0px;
-}
-
-/* remove shadow of playlist/album cover */
-.XRD1P2qyA9MlnhSLnxwi {
-    box-shadow: none;
-}
+    /* weird shadow in sidebar */
+    .GABF6hN5nVeGNtN8vb_q {
+        display: none; }
 
 
-/* PROGRESSBAR MODS: */
+/* CHANGE BACKGROUND: */
+    /* main view */
+    .Root__main-view,
+        /* >playlist bg */
+        .rezqw3Q4OEPB1m4rmwfw,
+        /* >playlist row header bg */
+        .qJOhHoRcFhHJpEQ2CwFT.koyeY6AgGRPmyPITi7yO,
+        /*  >genre pages bg */
+        .Ft1cMGlqDsCbqmXQyeKN,
 
-/* set progressbar as top border
- * of bottom playback bar */ 
-.playback-bar {
-  position: fixed;
-  bottom: 82px;
-  left: 0px;
-}
+    /* sidebar */
+    .Root__nav-bar,
 
-/* set progressbar background */
-.DRdf8zxrOUXwYM3zXYRc {  
-  background-color: var(--pgb-bg);
-}
+    /* now playing bar */
+    footer {
+        background-color: var(--bg); }
 
 
-/* move timestamps to respective
- * position at window border */
-.OlJJ1YWOPpopfYVa0E1L,
-.X4mdgRzyBsWSX2RQYm_w {
-  position: fixed;
-  bottom: 64px;
-}
-.playback-bar__progress-time-elapsed.X4mdgRzyBsWSX2RQYm_w {
-  left: 0px !important;
-}
-.OlJJ1YWOPpopfYVa0E1L {
-  right: 0px;
-}
+/* SECONDARY COLORS */
+    /* back/foreward buttons */
+    .VgSbatGBB9XwTH2_dsxg .ql0zZd7giPXSnPg75NR0,
 
-/* shrink cover image to allow
- * clearance for left timestamp */ 
-.cover-art {
-  height: 46px;
-  width: 46px ;
-  margin-top: 17px;
-}
+    /* account button and popup*/
+    .odcjv30UQnjaTv4sylc0,
+    .SboKmDrCTZng7t4EgNoM,
 
-/* fix artist link position */
-.GzHNAzm2S2V6B_1vzk03.standalone-ellipsis-one-line.X4mdgRzyBsWSX2RQYm_w {
-  bottom: 3px !important;
-  left: 60px !important;
-}
+    /* home - cards */
+    .LunqxlFIupJw_Dkx6mNx,
+
+    /* search pill */
+    .QO9loc33XC50mMRUCIvf {
+        background-color: var(--accent); }
+
+
+/* MAIN PLAY BUTTON */
+    .A8NeSZBojOQuVvK4l1pS {
+        background-color: var(--accent-text);}
+    .A8NeSZBojOQuVvK4l1pS > svg:nth-child(1) {
+        fill: var(--bg)}
+
+
+/* FIXING TEXTS */
+    /* search pill text/foreground */
+    .QO9loc33XC50mMRUCIvf,
+    .hDgDGI,
+
+    /* current song title */
+    .y9ohL21kdZwx3S9EuDh2,
+
+    /* playback time */
+    .SYnLm8pwZls9sOX9AvJZ {
+        color: var(--accent-text);
+        fill: var(--accent-text) }
+
+
+/* FIXING THE GRADIENTS */
+    /* home-greeter gradient */
+    .vzMSLXDXM8yiYziBe_UK {
+        background-image: linear-gradient(rgba(0,0,0,.6) 0, var(--bg)); }
+
+    /* home-greeter cards background */
+    .Z35BWOA10YGn5uc9YgAp {
+        background-color: var(--bga2); }
+
+    /* playlist-banner gradient */
+    .xYgjMpAjE5XT05aRIezb {
+        background: linear-gradient(transparent 0,var(--bga)); }
+    .uebZpDr3EwDvpO0w6P9U {
+        background-image: linear-gradient(var(--bga) , var(--bg)); }
 ```
 
 ### 3. Basic configuration:
